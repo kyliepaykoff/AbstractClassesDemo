@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace ConsoleUI
 {
-    internal class Car : Vehicle 
+    public class Car : Vehicle 
     {
 
-        public bool HasTrunk { get; set; }
+        public bool HasTrunk { get; set; } = true;
         public override void DriveAbstract()
         {
             Console.WriteLine($"The car is driving.");
 
         }
-      
+       
+
     }
 }

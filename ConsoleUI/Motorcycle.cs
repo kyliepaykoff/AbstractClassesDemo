@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleUI
 {
-    internal class Motorcycle : Vehicle
+    public class Motorcycle : Vehicle
     {
-        public bool HasSideCar { get; set; }
+        public bool HasSideCar { get; set; } = false;
 
         public override void DriveAbstract()
         {
@@ -19,5 +19,8 @@ namespace ConsoleUI
         {
             Console.WriteLine($"The motorcycle's virtual drive method.");
         }
+
+       
     }
+    
 }

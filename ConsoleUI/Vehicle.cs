@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleUI
 {
-    internal abstract class Vehicle
+    public abstract class Vehicle
     {
         public string Year { get; set; } = "Default value";
         public string Make { get; set; } = "Default value";
@@ -20,6 +20,8 @@ namespace ConsoleUI
 
         
         }
+
+       
         
 
 

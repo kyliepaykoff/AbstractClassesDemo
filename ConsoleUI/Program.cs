@@ -80,7 +80,7 @@ namespace ConsoleUI
             vehicles.Add(paulsCar);
             foreach (var vehicle in vehicles)
             {
-                Console.WriteLine($"Year: {vehicle.Year} , Make: {vehicle.Make} , Model {vehicle.Model}.");
+                Console.WriteLine($"Year: {vehicle.Year} , Make: {vehicle.Make} , Model: {vehicle.Model}.");
                 Console.WriteLine();
         
                 vehicle.DriveVirtual();
@@ -89,7 +89,7 @@ namespace ConsoleUI
             }
 
             // Call each of the drive methods for one car and one motorcycle
-
+           
             #endregion            
             Console.ReadLine();
         }
