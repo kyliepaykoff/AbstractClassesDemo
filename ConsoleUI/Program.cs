@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace ConsoleUI
 {
@@ -43,10 +45,36 @@ namespace ConsoleUI
              * Set the properties values with object initializer syntax
              */
 
+            var myCar = new Car()
+            {
+                HasTrunk = true,
+
+                Year = "2020",
+                Make = "Toyota",
+                Model = "Corolla"
+
+            };
+            var motorcycle1 = new Motorcycle()
+            {
+                HasSideCar = false,
+                Year = "2024",
+                Make = "Honda" ,
+                Model = "Rebel"
+
+            };
+            var  grandpasMotorcycle = new Motorcycle()
+            { Make = "Harley", Year = "2010", Model = "Heritage Softail" };
+            var paulCar = new Car()
+            { Make = "Ford", Year = "2015", Model = "Mustang" };
+
+                 
+            
+
             /*
              * Add the 4 vehicles to the list
              * Using a foreach loop iterate through the list and display each of the properties
              */
+
 
             // Call each of the drive methods for one car and one motorcycle
 
