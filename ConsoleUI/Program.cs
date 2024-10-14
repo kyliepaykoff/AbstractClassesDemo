@@ -64,7 +64,7 @@ namespace ConsoleUI
             };
             var  grandpasMotorcycle = new Motorcycle()
             { Make = "Harley", Year = "2010", Model = "Heritage Softail" };
-            var paulCar = new Car()
+            var paulsCar = new Car()
             { Make = "Ford", Year = "2015", Model = "Mustang" };
 
                  
@@ -74,7 +74,19 @@ namespace ConsoleUI
              * Add the 4 vehicles to the list
              * Using a foreach loop iterate through the list and display each of the properties
              */
-
+            vehicles.Add(myCar);
+            vehicles.Add(motorcycle1);  
+            vehicles.Add(grandpasMotorcycle);
+            vehicles.Add(paulsCar);
+            foreach (var vehicle in vehicles)
+            {
+                Console.WriteLine($"Year: {vehicle.Year} , Make: {vehicle.Make} , Model {vehicle.Model}.");
+                Console.WriteLine();
+        
+                vehicle.DriveVirtual();
+                vehicle.DriveAbstract();
+                Console.WriteLine();
+            }
 
             // Call each of the drive methods for one car and one motorcycle
 
