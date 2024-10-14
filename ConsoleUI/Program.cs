@@ -34,7 +34,7 @@ namespace ConsoleUI
 
             // Create a list of Vehicle called vehicles
 
-           
+            var vehicles = new List<Vehicle>();
 
 
             /*
